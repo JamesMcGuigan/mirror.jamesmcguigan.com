@@ -1,0 +1,15 @@
+{
+  "name": "mirror",
+  "version": 2,
+  "alias":  [ "mirror.jamesmcguigan.com" ],
+  "builds": [
+    { "src": "*.html", "use": "@now/static" },
+    { "src": "*.py",   "use": "@now/python" },
+    { "src": "*.js",   "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/mirror.html" }
+  ],
+  "public":    true,
+  "cleanUrls": true
+}
