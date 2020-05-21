@@ -3,7 +3,8 @@
   "alias":  [ "mirror.jamesmcguigan.com" ],
   "builds": [
     { "src": "*.html", "use": "@now/static" },
-    { "src": "*.png",  "use": "@now/static" }
+    { "src": "*.png",  "use": "@now/static" },
+    { "src": "*.gif",  "use": "@now/static" }
   ],
   "public":    true,
   "cleanUrls": true
