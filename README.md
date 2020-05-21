@@ -1,3 +1,3 @@
-# HTML Webcam
+# HTML5 Video Mirror
 
-Technical research into how to access a webcam inside a browser
+https://mirror.jamesmcguigan.com
