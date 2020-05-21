@@ -2,7 +2,8 @@
   "version": 2,
   "alias":  [ "mirror.jamesmcguigan.com" ],
   "builds": [
-    { "src": "*.html", "use": "@now/static" }
+    { "src": "*.html", "use": "@now/static" },
+    { "src": "*.png",  "use": "@now/static" }
   ],
   "public":    true,
   "cleanUrls": true
