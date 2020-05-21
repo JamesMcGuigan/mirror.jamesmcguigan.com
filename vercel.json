@@ -4,10 +4,6 @@
   "builds": [
     { "src": "*.html", "use": "@now/static" }
   ],
-  "rewrites": [{
-    "source": "/",
-    "destination": "/mirror.html"
-  }],
   "public":    true,
   "cleanUrls": true
 }
