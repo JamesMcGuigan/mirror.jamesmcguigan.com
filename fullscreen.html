@@ -29,6 +29,10 @@
             left: 0;
             width:  100vw;
             height: 100vh;
+
+            <!-- Mirror Video - https://stackoverflow.com/questions/47742208/horizontally-flipping-getusermedias-webcam-image-stream -->
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
         }
     </style>
 </head>
@@ -36,9 +40,9 @@
     <main>
         <h1 id="title">Mirror, Mirror on the Wall, Who's the Fairest of Them All?</h1>
         <div class="frame">
-            <div class="frame-inner">
+            <a href="./">
                 <video autoplay id="videoElement"></video>
-            </div>
+            </a>
         </div>
     </main>
     <script>
