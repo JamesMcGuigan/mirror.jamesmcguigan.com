@@ -3,40 +3,7 @@
 <head>
     <title>Mirror, Mirror on the Wall, Who's the Fairest of Them All?</title>
     <link rel="icon" type="image/png" sizes="128x128" href="favicon.png">
-
-    <!-- Inspiration: https://www.kirupa.com/html5/accessing_your_webcam_in_html5.htm -->
-    <style>
-        h1 {
-            position: absolute;
-            text-align: center;
-            width: 100%;
-            z-index: 2;
-            padding: 1em;
-            font-family: Luminari, fantasy;
-        }
-        main {
-            height: 100vh;
-            width:  100vw;
-            display: flex;
-        }
-        .frame {
-            margin: auto;
-            width:  850px;
-            height: 715px;
-            background-image: url("frame-gold.gif");  /* gif = 215kb | png = 585kb*/
-        }
-        .frame a { display: block }
-        video {
-            display: block;
-            margin: 117px 138px;
-            width:  604px;
-            height: 453px;
-
-            <!-- Mirror Video - https://stackoverflow.com/questions/47742208/horizontally-flipping-getusermedias-webcam-image-stream -->
-            -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
@@ -46,7 +13,6 @@
                 <video autoplay id="videoElement"></video>
             </a>
         </div>
-
     </main>
     <script>
         let video = document.querySelector("#videoElement");
